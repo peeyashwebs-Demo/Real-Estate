@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Peeyash Estate</title>
+    <meta
+      name="description"
+      content="Contact Peeyash Estate for luxury property inquiries, consultations, private viewings, and premium real estate support."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header inner-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo" aria-label="Peeyash Estate Home">
+          Peeyash <span>Estate</span>
+        </a>
+
+        <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+          <a href="index.html">Home</a>
+          <a href="properties.html">Properties</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="agents.html">Agents</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-sm btn-primary"
+            >Book Consultation</a
+          >
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="page-hero">
+        <div class="container reveal">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s start your next real estate conversation</h1>
+          <p>
+            Whether you are buying, selling, leasing, or investing, Peeyash
+            Estate is here to guide you with clarity, discretion, and premium
+            support every step of the way.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Get In Touch</p>
+            <h2>Connect with our team for tailored property guidance</h2>
+            <p>
+              Reach out to schedule a private consultation, request a viewing,
+              ask about a listing, or discuss your next move in the market.
+            </p>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-info-wrap">
+              <div class="contact-card reveal">
+                <h3>Visit Our Office</h3>
+                <p>12 Admiralty Way, Lekki Phase 1, Lagos</p>
+              </div>
+
+              <div class="contact-card reveal">
+                <h3>Call Us</h3>
+                <p><a href="tel:+2348000000000">+234 800 000 0000</a></p>
+              </div>
+
+              <div class="contact-card reveal">
+                <h3>Email Us</h3>
+                <p>
+                  <a href="mailto:hello@peeyashestate.com"
+                    >hello@peeyashestate.com</a
+                  >
+                </p>
+              </div>
+
+              <div class="contact-card reveal">
+                <h3>Business Hours</h3>
+                <p>Monday - Saturday: 8:00 AM - 6:00 PM</p>
+                <p>Sunday: By Appointment Only</p>
+              </div>
+
+              <div class="contact-card reveal">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                  <a href="#" aria-label="Instagram">Instagram</a>
+                  <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                  <a href="#" aria-label="Facebook">Facebook</a>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form reveal">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="emailAddress">Email Address</label>
+                  <input
+                    type="email"
+                    id="emailAddress"
+                    name="emailAddress"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiryType">Inquiry Type</label>
+                  <select id="inquiryType" name="inquiryType">
+                    <option value="Buying">Buying</option>
+                    <option value="Selling">Selling</option>
+                    <option value="Leasing">Leasing</option>
+                    <option value="Consultation">Consultation</option>
+                    <option value="Investment Advisory">
+                      Investment Advisory
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="preferredLocation">Preferred Location</label>
+                  <input
+                    type="text"
+                    id="preferredLocation"
+                    name="preferredLocation"
+                    placeholder="E.g. Ikoyi, Lekki, Victoria Island"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="budgetRange">Budget Range</label>
+                  <select id="budgetRange" name="budgetRange">
+                    <option value="Under $500k">Under $500k</option>
+                    <option value="$500k - $1M">$500k - $1M</option>
+                    <option value="$1M - $3M">$1M - $3M</option>
+                    <option value="$3M+">$3M+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell us about your property goals</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="7"
+                  placeholder="Tell us what you're looking for, your timeline, preferred property type, or any details that will help us guide you better."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAP -->
+      <section class="section map-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Our Location</p>
+            <h2>Visit our office in Lekki</h2>
+          </div>
+
+          <div class="map-box reveal">
+            <iframe
+              src="https://www.google.com/maps?q=Lekki%20Phase%201%20Lagos&z=14&output=embed"
+              width="100%"
+              height="420"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing Lekki Phase 1 Lagos"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ / REASSURANCE -->
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Before You Reach Out</p>
+            <h2>Helpful answers for new clients</h2>
+          </div>
+
+          <div class="faq-grid">
+            <details class="faq-item reveal">
+              <summary>Can I book a private consultation first?</summary>
+              <p>
+                Yes. We offer consultations to understand your needs, preferred
+                locations, timeline, and budget before recommending next steps.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Do you arrange private property viewings?</summary>
+              <p>
+                Absolutely. We can coordinate private inspections and guided
+                viewings based on your schedule and preferences.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Do you help investors as well?</summary>
+              <p>
+                Yes. We support investors with market insight, acquisition
+                strategy, and property recommendations aligned with long-term
+                value goals.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>How soon will I get a response?</summary>
+              <p>
+                Our team aims to respond as quickly as possible during business
+                hours and guide you to the right next step.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section">
+        <div class="container cta-panel reveal">
+          <div>
+            <p class="eyebrow">Private Advisory</p>
+            <h2>Ready to speak with Peeyash Estate?</h2>
+            <p>
+              Contact us today for trusted guidance on premium homes, strategic
+              investments, and tailored real estate solutions.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a href="tel:+2348000000000" class="btn btn-primary">Call Now</a>
+            <a href="properties.html" class="btn btn-outline"
+              >Browse Properties</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo"
+            >Peeyash <span>Estate</span></a
+          >
+          <p>
+            Luxury real estate brokerage built on trust, elegance, and market
+            excellence. We help clients discover, secure, and maximize premium
+            property opportunities.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="X">X</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Buyer Representation</a></li>
+            <li><a href="services.html">Seller Advisory</a></li>
+            <li><a href="services.html">Leasing Support</a></li>
+            <li><a href="services.html">Investment Advisory</a></li>
+            <li><a href="services.html">Luxury Consultations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <p>Subscribe for market updates and exclusive opportunities.</p>
+          <form class="newsletter-form">
+            <label for="newsletter-email-contact" class="sr-only"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="newsletter-email-contact"
+              placeholder="Enter your email"
+              aria-label="Email address"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div>
+          <h4>Office</h4>
+          <p>12 Admiralty Way, Lekki Phase 1, Lagos</p>
+          <p><a href="tel:+2348000000000">+234 800 000 0000</a></p>
+          <p>
+            <a href="mailto:hello@peeyashestate.com">hello@peeyashestate.com</a>
+          </p>
+          <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Peeyash Estate. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

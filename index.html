@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peeyash Estate | Luxury Real Estate</title>
+    <meta
+      name="description"
+      content="Peeyash Estate offers luxury property sales, premium advisory, and exceptional real estate experiences across prime locations."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo" aria-label="Peeyash Estate Home">
+          Peeyash <span>Estate</span>
+        </a>
+
+        <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="properties.html">Properties</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="agents.html">Agents</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-sm btn-primary"
+            >Book Consultation</a
+          >
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero hero-home" aria-label="Hero Section">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source src="assets/esstate video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content reveal">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Modern Classic Real Estate</p>
+              <h1>Discover homes defined by elegance, prestige, and place.</h1>
+              <p class="hero-text">
+                Peeyash Estate curates premium homes, apartments, duplexes, and
+                investment properties for clients who value refined living,
+                strong returns, and exceptional advisory support.
+              </p>
+
+              <div class="hero-actions">
+                <a href="properties.html" class="btn btn-primary"
+                  >View Listings</a
+                >
+                <a href="contact.html" class="btn btn-outline"
+                  >Schedule Consultation</a
+                >
+              </div>
+
+              <div class="hero-mini-stats">
+                <div>
+                  <strong>250+</strong>
+                  <span>Luxury Deals Closed</span>
+                </div>
+                <div>
+                  <strong>18+</strong>
+                  <span>Years Experience</span>
+                </div>
+                <div>
+                  <strong>12</strong>
+                  <span>Prime Locations</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card glass-card reveal">
+              <div class="search-card-top">
+                <p class="eyebrow">Find Your Ideal Property</p>
+                <h3>Start your property search</h3>
+              </div>
+
+              <form
+                class="hero-search-form"
+                action="properties.html"
+                method="get"
+              >
+                <div class="form-group">
+                  <label for="location">Location</label>
+                  <select id="location" name="location">
+                    <option value="Lekki">Lekki</option>
+                    <option value="Ikoyi">Ikoyi</option>
+                    <option value="Victoria Island">Victoria Island</option>
+                    <option value="Banana Island">Banana Island</option>
+                    <option value="Abuja">Abuja</option>
+                  </select>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="type">Property Type</label>
+                    <select id="type" name="type">
+                      <option value="Apartment">Apartment</option>
+                      <option value="Duplex">Duplex</option>
+                      <option value="Penthouse">Penthouse</option>
+                      <option value="Villa">Villa</option>
+                      <option value="Commercial">Commercial</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="price">Budget</label>
+                    <select id="price" name="price">
+                      <option value="$200k - $500k">$200k - $500k</option>
+                      <option value="$500k - $1M">$500k - $1M</option>
+                      <option value="$1M - $3M">$1M - $3M</option>
+                      <option value="$3M+">$3M+</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="bedrooms">Bedrooms</label>
+                    <select id="bedrooms" name="bedrooms">
+                      <option value="1+">1+</option>
+                      <option value="2+">2+</option>
+                      <option value="3+">3+</option>
+                      <option value="4+">4+</option>
+                      <option value="5+">5+</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" name="status">
+                      <option value="For Sale">For Sale</option>
+                      <option value="For Rent">For Rent</option>
+                      <option value="New Development">New Development</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  Search Properties
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUST STRIP -->
+      <section class="brand-strip">
+        <div class="container brand-strip-inner reveal">
+          <span>Trusted for luxury home acquisition</span>
+          <span>Premium advisory</span>
+          <span>Investment intelligence</span>
+          <span>Verified property transactions</span>
+          <span>Private client support</span>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats-strip">
+        <div class="container stats-grid">
+          <div class="stat reveal">
+            <strong>250+</strong>
+            <span>Properties Closed</span>
+          </div>
+          <div class="stat reveal">
+            <strong>95%</strong>
+            <span>Client Retention</span>
+          </div>
+          <div class="stat reveal">
+            <strong>₦45B+</strong>
+            <span>Property Value Managed</span>
+          </div>
+          <div class="stat reveal">
+            <strong>24/7</strong>
+            <span>Luxury Support</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED LISTINGS -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Featured Listings</p>
+            <h2>Exceptional addresses in the city’s finest locations</h2>
+            <p>
+              Explore a curated portfolio of modern residences, premium
+              penthouses, and investment-grade homes in highly sought-after
+              neighborhoods.
+            </p>
+          </div>
+
+          <div class="featured-grid">
+            <article class="listing-card reveal">
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-1.jpg"
+                  alt="Elegant villa exterior"
+                />
+                <span class="listing-badge">For Sale</span>
+              </div>
+              <div class="listing-info">
+                <h3>Grand Villa Residence</h3>
+                <p>Ikoyi, Lagos</p>
+                <div class="listing-meta">
+                  <span>5 Beds</span>
+                  <span>6 Baths</span>
+                  <span>820 sqm</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$2,450,000</strong>
+                  <a href="properties.html" class="text-link">View Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="listing-card reveal">
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-2.jpg"
+                  alt="Premium penthouse"
+                />
+                <span class="listing-badge">Featured</span>
+              </div>
+              <div class="listing-info">
+                <h3>Skyline Penthouse Suite</h3>
+                <p>Victoria Island, Lagos</p>
+                <div class="listing-meta">
+                  <span>4 Beds</span>
+                  <span>4 Baths</span>
+                  <span>510 sqm</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$1,980,000</strong>
+                  <a href="properties.html" class="text-link">View Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="listing-card reveal">
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-3.jpg"
+                  alt="Luxury waterfront home"
+                />
+                <span class="listing-badge">New</span>
+              </div>
+              <div class="listing-info">
+                <h3>Waterfront Manor</h3>
+                <p>Banana Island, Lagos</p>
+                <div class="listing-meta">
+                  <span>6 Beds</span>
+                  <span>7 Baths</span>
+                  <span>1050 sqm</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$4,250,000</strong>
+                  <a href="properties.html" class="text-link">View Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="listing-card reveal">
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-4.jpg"
+                  alt="Modern duplex home"
+                />
+                <span class="listing-badge">Hot Deal</span>
+              </div>
+              <div class="listing-info">
+                <h3>Contemporary Duplex Haven</h3>
+                <p>Lekki Phase 1, Lagos</p>
+                <div class="listing-meta">
+                  <span>4 Beds</span>
+                  <span>5 Baths</span>
+                  <span>600 sqm</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$1,250,000</strong>
+                  <a href="properties.html" class="text-link">View Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="listing-card reveal">
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-5.jpg"
+                  alt="Elegant apartment tower"
+                />
+                <span class="listing-badge">For Rent</span>
+              </div>
+              <div class="listing-info">
+                <h3>Harbour View Apartments</h3>
+                <p>Eko Atlantic, Lagos</p>
+                <div class="listing-meta">
+                  <span>3 Beds</span>
+                  <span>3 Baths</span>
+                  <span>350 sqm</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$12,000/mo</strong>
+                  <a href="properties.html" class="text-link">View Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="listing-card reveal">
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-6.jpg"
+                  alt="Luxury smart home"
+                />
+                <span class="listing-badge">Smart Home</span>
+              </div>
+              <div class="listing-info">
+                <h3>The Aurora Smart Residence</h3>
+                <p>Asokoro, Abuja</p>
+                <div class="listing-meta">
+                  <span>5 Beds</span>
+                  <span>6 Baths</span>
+                  <span>740 sqm</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$2,780,000</strong>
+                  <a href="properties.html" class="text-link">View Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-actions reveal">
+            <a href="properties.html" class="btn btn-primary"
+              >Explore All Properties</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section class="section section-dark parallax-lite-section">
+        <div class="container split-layout">
+          <div class="image-panel reveal parallax-lite">
+            <img
+              src="assets/images/interior-luxury.jpg"
+              alt="Luxury living room"
+            />
+          </div>
+
+          <div class="content-panel">
+            <div class="section-header reveal">
+              <p class="eyebrow">Why Choose Us</p>
+              <h2>Strategic expertise with a refined personal touch</h2>
+              <p>
+                We combine premium client service with real market intelligence
+                to help buyers, investors, and sellers make confident decisions.
+              </p>
+            </div>
+
+            <div class="feature-list">
+              <div class="feature-item reveal">
+                <h3>Curated Market Knowledge</h3>
+                <p>
+                  We guide clients with insight-driven advice on luxury homes,
+                  high-growth districts, and long-term property value.
+                </p>
+              </div>
+
+              <div class="feature-item reveal">
+                <h3>Tailored Representation</h3>
+                <p>
+                  Every client receives a customized buying or selling strategy
+                  designed around lifestyle, timing, and investment goals.
+                </p>
+              </div>
+
+              <div class="feature-item reveal">
+                <h3>Elevated Presentation</h3>
+                <p>
+                  From listing visuals to negotiation, we position every
+                  property with a polished, editorial, high-conversion standard.
+                </p>
+              </div>
+
+              <div class="feature-item reveal">
+                <h3>End-to-End Support</h3>
+                <p>
+                  We support due diligence, viewings, negotiation,
+                  documentation, and post-sale follow-up to make every
+                  transaction smoother.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROPERTY CATEGORIES -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Property Categories</p>
+            <h2>Solutions for every lifestyle and investment plan</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card reveal">
+              <h3>Luxury Homes</h3>
+              <p>
+                Elegant standalone homes and villas in secure premium locations.
+              </p>
+              <a href="properties.html" class="text-link">Browse Category</a>
+            </article>
+
+            <article class="category-card reveal">
+              <h3>Penthouses</h3>
+              <p>
+                Elevated city living with skyline views, refined interiors, and
+                exclusive amenities.
+              </p>
+              <a href="properties.html" class="text-link">Browse Category</a>
+            </article>
+
+            <article class="category-card reveal">
+              <h3>Commercial Assets</h3>
+              <p>
+                Offices, retail spaces, and mixed-use opportunities for serious
+                investors and entrepreneurs.
+              </p>
+              <a href="properties.html" class="text-link">Browse Category</a>
+            </article>
+
+            <article class="category-card reveal">
+              <h3>Rental Residences</h3>
+              <p>
+                Premium apartments and serviced homes for clients seeking
+                comfort and flexibility.
+              </p>
+              <a href="properties.html" class="text-link">Browse Category</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Our Process</p>
+            <h2>A seamless path from inquiry to keys in hand</h2>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-card reveal">
+              <span>01</span>
+              <h3>Consultation</h3>
+              <p>
+                We understand your goals, timeline, location preference, and
+                property budget.
+              </p>
+            </div>
+
+            <div class="process-card reveal">
+              <span>02</span>
+              <h3>Curated Selection</h3>
+              <p>
+                We shortlist premium properties aligned with your lifestyle or
+                investment criteria.
+              </p>
+            </div>
+
+            <div class="process-card reveal">
+              <span>03</span>
+              <h3>Inspection & Due Diligence</h3>
+              <p>
+                We coordinate viewings, verify documentation, and guide you
+                through critical checks.
+              </p>
+            </div>
+
+            <div class="process-card reveal">
+              <span>04</span>
+              <h3>Negotiation & Closing</h3>
+              <p>
+                We help structure strong deals and support a smooth closing
+                process from offer to transfer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEIGHBORHOODS -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Prime Neighborhoods</p>
+            <h2>Where prestige, convenience, and value meet</h2>
+          </div>
+
+          <div class="neighborhood-grid">
+            <div class="neighborhood-card reveal">
+              <h3>Ikoyi</h3>
+              <p>Luxury living, executive residences, and long-term value.</p>
+            </div>
+            <div class="neighborhood-card reveal">
+              <h3>Victoria Island</h3>
+              <p>Modern city lifestyle, premium towers, and business access.</p>
+            </div>
+            <div class="neighborhood-card reveal">
+              <h3>Lekki</h3>
+              <p>
+                Fast-growing districts with family homes and investment appeal.
+              </p>
+            </div>
+            <div class="neighborhood-card reveal">
+              <h3>Banana Island</h3>
+              <p>
+                Ultra-prime waterfront address with exclusive luxury appeal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section section-dark">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Client Testimonials</p>
+            <h2>Trusted by buyers, sellers, and investors</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card reveal">
+              <p>
+                “Peeyash Estate made our home acquisition process incredibly
+                smooth. Their professionalism and attention to detail stood out
+                from the first inspection to the final paperwork.”
+              </p>
+              <h4>Amaka E.</h4>
+              <span>Home Buyer</span>
+            </article>
+
+            <article class="testimonial-card reveal">
+              <p>
+                “They positioned our property beautifully, handled inquiries
+                professionally, and helped us close much faster than expected.”
+              </p>
+              <h4>Tunde A.</h4>
+              <span>Property Seller</span>
+            </article>
+
+            <article class="testimonial-card reveal">
+              <p>
+                “As an investor, I value people who understand both lifestyle
+                demand and return potential. Their market advice was sharp and
+                practical.”
+              </p>
+              <h4>David O.</h4>
+              <span>Real Estate Investor</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Frequently Asked Questions</p>
+            <h2>Answers to common property questions</h2>
+          </div>
+
+          <div class="faq-grid">
+            <details class="faq-item reveal">
+              <summary>Do you handle both buying and selling?</summary>
+              <p>
+                Yes. We assist clients with buying, selling, leasing, and
+                investment advisory across premium residential and commercial
+                markets.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Can I schedule a private inspection?</summary>
+              <p>
+                Absolutely. We can arrange virtual tours or private physical
+                inspections based on your availability.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Do you support documentation and due diligence?</summary>
+              <p>
+                Yes. We guide clients through title verification, transaction
+                support, and other due diligence steps.
+              </p>
+            </details>
+
+            <details class="faq-item reveal">
+              <summary>Do you help property investors?</summary>
+              <p>
+                Yes. We help investors identify growth areas, rental demand, and
+                opportunities with strong long-term value.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section">
+        <div class="container cta-panel reveal">
+          <div>
+            <p class="eyebrow">Private Advisory</p>
+            <h2>Ready to buy, sell, or invest with confidence?</h2>
+            <p>
+              Connect with Peeyash Estate for tailored support, premium market
+              guidance, and a smooth property experience.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary"
+              >Talk to Peeyash Estate</a
+            >
+            <a href="properties.html" class="btn btn-outline"
+              >Browse Properties</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo"
+            >Peeyash <span>Estate</span></a
+          >
+          <p>
+            Luxury real estate brokerage built on trust, elegance, and market
+            excellence. We help clients discover, secure, and maximize premium
+            property opportunities.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="X">X</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Luxury Property Sales</a></li>
+            <li><a href="services.html">Property Leasing</a></li>
+            <li><a href="services.html">Investment Advisory</a></li>
+            <li><a href="services.html">Property Management</a></li>
+            <li><a href="services.html">Market Valuation</a></li>
+            <li><a href="services.html">Private Consultations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe for market updates, featured listings, and exclusive
+            property opportunities.
+          </p>
+          <form class="newsletter-form">
+            <label for="newsletter-email" class="sr-only">Email Address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              placeholder="Enter your email address"
+              aria-label="Email address"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div>
+          <h4>Office</h4>
+          <p>12 Admiralty Way, Lekki Phase 1, Lagos</p>
+          <p><a href="tel:+2348000000000">+234 800 000 0000</a></p>
+          <p>
+            <a href="mailto:hello@peeyashestate.com">hello@peeyashestate.com</a>
+          </p>
+          <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Peeyash Estate. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

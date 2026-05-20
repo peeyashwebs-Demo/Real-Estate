@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties | Peeyash Estate</title>
+    <meta
+      name="description"
+      content="Browse premium residences, penthouses, villas, and investment properties with Peeyash Estate."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header inner-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo" aria-label="Peeyash Estate Home">
+          Peeyash <span>Estate</span>
+        </a>
+
+        <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+          <a href="index.html">Home</a>
+          <a href="properties.html" class="active">Properties</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="agents.html">Agents</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-sm btn-primary"
+            >Book Consultation</a
+          >
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <div class="container reveal">
+          <p class="eyebrow">Properties</p>
+          <h1>Luxury residences selected for discerning clients</h1>
+          <p>
+            Explore a curated portfolio of exceptional homes, signature
+            penthouses, private villas, and investment-grade residences in prime
+            locations.
+          </p>
+        </div>
+      </section>
+
+      <!-- FILTER + INTRO -->
+      <section class="section filter-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Property Collection</p>
+            <h2>Refined options across premium locations</h2>
+            <p>
+              Filter by budget, location, and property type to discover homes
+              aligned with your lifestyle and investment goals.
+            </p>
+          </div>
+
+          <div class="filter-bar reveal">
+            <select id="priceFilter" aria-label="Filter by price">
+              <option value="all">All Prices</option>
+              <option value="low">Under $2M</option>
+              <option value="mid">$2M - $3M</option>
+              <option value="high">Above $3M</option>
+            </select>
+
+            <select id="locationFilter" aria-label="Filter by location">
+              <option value="all">All Locations</option>
+              <option value="Ikoyi">Ikoyi</option>
+              <option value="Victoria Island">Victoria Island</option>
+              <option value="Banana Island">Banana Island</option>
+            </select>
+
+            <select id="typeFilter" aria-label="Filter by property type">
+              <option value="all">All Types</option>
+              <option value="Villa">Villa</option>
+              <option value="Penthouse">Penthouse</option>
+              <option value="Mansion">Mansion</option>
+            </select>
+          </div>
+
+          <div class="property-grid stagger-grid" id="propertyGrid">
+            <article
+              class="property-card reveal property-item"
+              data-price="mid"
+              data-location="Ikoyi"
+              data-type="Villa"
+            >
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-1.jpg"
+                  alt="Grand villa residence in Ikoyi"
+                />
+                <span class="listing-badge">Featured</span>
+              </div>
+              <div class="property-card-body">
+                <h3>Grand Villa Residence</h3>
+                <p>Ikoyi, Lagos</p>
+                <div class="listing-meta">
+                  <span>5 Beds</span>
+                  <span>6 Baths</span>
+                  <span>Villa</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$2,450,000</strong>
+                  <a href="contact.html" class="text-link">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="property-card reveal property-item"
+              data-price="low"
+              data-location="Victoria Island"
+              data-type="Penthouse"
+            >
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-2.jpg"
+                  alt="Skyline penthouse suite in Victoria Island"
+                />
+                <span class="listing-badge">City View</span>
+              </div>
+              <div class="property-card-body">
+                <h3>Skyline Penthouse Suite</h3>
+                <p>Victoria Island, Lagos</p>
+                <div class="listing-meta">
+                  <span>4 Beds</span>
+                  <span>4 Baths</span>
+                  <span>Penthouse</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$1,980,000</strong>
+                  <a href="contact.html" class="text-link">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="property-card reveal property-item"
+              data-price="high"
+              data-location="Banana Island"
+              data-type="Mansion"
+            >
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-3.jpg"
+                  alt="Waterfront manor in Banana Island"
+                />
+                <span class="listing-badge">Waterfront</span>
+              </div>
+              <div class="property-card-body">
+                <h3>Waterfront Manor</h3>
+                <p>Banana Island, Lagos</p>
+                <div class="listing-meta">
+                  <span>6 Beds</span>
+                  <span>7 Baths</span>
+                  <span>Mansion</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$4,250,000</strong>
+                  <a href="contact.html" class="text-link">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="property-card reveal property-item"
+              data-price="mid"
+              data-location="Ikoyi"
+              data-type="Villa"
+            >
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-4.jpg"
+                  alt="Parkside signature villa in Ikoyi"
+                />
+                <span class="listing-badge">Private Sale</span>
+              </div>
+              <div class="property-card-body">
+                <h3>Parkside Signature Villa</h3>
+                <p>Ikoyi, Lagos</p>
+                <div class="listing-meta">
+                  <span>5 Beds</span>
+                  <span>5 Baths</span>
+                  <span>Villa</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$2,100,000</strong>
+                  <a href="contact.html" class="text-link">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="property-card reveal property-item"
+              data-price="high"
+              data-location="Victoria Island"
+              data-type="Penthouse"
+            >
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-5.jpg"
+                  alt="Executive tower penthouse in Victoria Island"
+                />
+                <span class="listing-badge">Premium</span>
+              </div>
+              <div class="property-card-body">
+                <h3>Executive Tower Penthouse</h3>
+                <p>Victoria Island, Lagos</p>
+                <div class="listing-meta">
+                  <span>4 Beds</span>
+                  <span>5 Baths</span>
+                  <span>Penthouse</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$3,400,000</strong>
+                  <a href="contact.html" class="text-link">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="property-card reveal property-item"
+              data-price="high"
+              data-location="Banana Island"
+              data-type="Mansion"
+            >
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-6.jpg"
+                  alt="Island crest mansion in Banana Island"
+                />
+                <span class="listing-badge">Exclusive</span>
+              </div>
+              <div class="property-card-body">
+                <h3>Island Crest Mansion</h3>
+                <p>Banana Island, Lagos</p>
+                <div class="listing-meta">
+                  <span>7 Beds</span>
+                  <span>8 Baths</span>
+                  <span>Mansion</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$5,100,000</strong>
+                  <a href="contact.html" class="text-link">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="property-card reveal property-item"
+              data-price="low"
+              data-location="Ikoyi"
+              data-type="Villa"
+            >
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-7.jpg"
+                  alt="Refined family villa in Ikoyi"
+                />
+                <span class="listing-badge">New Listing</span>
+              </div>
+              <div class="property-card-body">
+                <h3>Refined Family Villa</h3>
+                <p>Ikoyi, Lagos</p>
+                <div class="listing-meta">
+                  <span>4 Beds</span>
+                  <span>4 Baths</span>
+                  <span>Villa</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$1,850,000</strong>
+                  <a href="contact.html" class="text-link">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="property-card reveal property-item"
+              data-price="mid"
+              data-location="Victoria Island"
+              data-type="Penthouse"
+            >
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-8.jpg"
+                  alt="Oceanfront penthouse in Victoria Island"
+                />
+                <span class="listing-badge">Oceanfront</span>
+              </div>
+              <div class="property-card-body">
+                <h3>Oceanfront Penthouse</h3>
+                <p>Victoria Island, Lagos</p>
+                <div class="listing-meta">
+                  <span>3 Beds</span>
+                  <span>4 Baths</span>
+                  <span>Penthouse</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$2,650,000</strong>
+                  <a href="contact.html" class="text-link">Inquire</a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="property-card reveal property-item"
+              data-price="high"
+              data-location="Banana Island"
+              data-type="Mansion"
+            >
+              <div class="listing-image-wrap">
+                <img
+                  src="assets/images/property-9.jpg"
+                  alt="Royal waterfront estate in Banana Island"
+                />
+                <span class="listing-badge">Signature Estate</span>
+              </div>
+              <div class="property-card-body">
+                <h3>Royal Waterfront Estate</h3>
+                <p>Banana Island, Lagos</p>
+                <div class="listing-meta">
+                  <span>8 Beds</span>
+                  <span>9 Baths</span>
+                  <span>Mansion</span>
+                </div>
+                <div class="listing-bottom">
+                  <strong>$6,200,000</strong>
+                  <a href="contact.html" class="text-link">Inquire</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALUE SECTION -->
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Why These Properties</p>
+            <h2>Homes selected for lifestyle, prestige, and long-term value</h2>
+            <p>
+              Every property in our portfolio is chosen with careful attention
+              to location quality, architectural appeal, livability, and
+              investment strength.
+            </p>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card reveal">
+              <h3>Prime Addresses</h3>
+              <p>
+                We focus on highly desirable neighborhoods with enduring market
+                demand and premium lifestyle appeal.
+              </p>
+            </article>
+
+            <article class="category-card reveal">
+              <h3>Verified Opportunities</h3>
+              <p>
+                Our team supports due diligence and documentation review to help
+                clients make decisions with confidence.
+              </p>
+            </article>
+
+            <article class="category-card reveal">
+              <h3>Luxury Standards</h3>
+              <p>
+                From interiors to amenities, each listing reflects a higher
+                standard of comfort, design, and presentation.
+              </p>
+            </article>
+
+            <article class="category-card reveal">
+              <h3>Strong Investment Potential</h3>
+              <p>
+                We highlight homes that combine lifestyle value with long-term
+                appreciation and income potential.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section">
+        <div class="container cta-panel reveal">
+          <div>
+            <p class="eyebrow">Private Viewing</p>
+            <h2>Need help choosing the right property?</h2>
+            <p>
+              Speak with Peeyash Estate for tailored recommendations, private
+              inspections, and personalized acquisition support.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary"
+              >Schedule Consultation</a
+            >
+            <a href="agents.html" class="btn btn-outline">Meet Our Agents</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo"
+            >Peeyash <span>Estate</span></a
+          >
+          <p>
+            Luxury real estate brokerage built on trust, elegance, and market
+            excellence. We help clients discover, secure, and maximize premium
+            property opportunities.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="X">X</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Luxury Property Sales</a></li>
+            <li><a href="services.html">Property Leasing</a></li>
+            <li><a href="services.html">Investment Advisory</a></li>
+            <li><a href="services.html">Property Management</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <p>Subscribe for market updates and exclusive listings.</p>
+          <form class="newsletter-form">
+            <label for="newsletter-email-properties" class="sr-only"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="newsletter-email-properties"
+              placeholder="Enter your email"
+              aria-label="Email address"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div>
+          <h4>Office</h4>
+          <p>12 Admiralty Way, Lekki Phase 1, Lagos</p>
+          <p><a href="tel:+2348000000000">+234 800 000 0000</a></p>
+          <p>
+            <a href="mailto:hello@peeyashestate.com">hello@peeyashestate.com</a>
+          </p>
+          <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Peeyash Estate. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
